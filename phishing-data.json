@@ -1,0 +1,28 @@
+{
+  "reports": [
+    {
+      "date": "2026-02-01",
+      "channel": "Email",
+      "severity": "High",
+      "count": 320
+    },
+    {
+      "date": "2026-02-05",
+      "channel": "SMS",
+      "severity": "Medium",
+      "count": 150
+    },
+    {
+      "date": "2026-02-10",
+      "channel": "Social",
+      "severity": "High",
+      "count": 210
+    },
+    {
+      "date": "2026-02-15",
+      "channel": "Email",
+      "severity": "Low",
+      "count": 90
+    }
+  ]
+}

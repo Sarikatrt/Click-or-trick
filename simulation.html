@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phishing Simulation | Click or Trick</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="simulation-light">
+
+<!-- ===== Gmail Header ===== -->
+<div class="gmail-header">
+    <div class="gmail-logo">Gmail</div>
+    <div class="timer-box">
+        ⏳ Time Left: <span id="timer">15</span>s
+    </div>
+</div>
+
+<div class="gmail-layout">
+
+    <!-- Left Sidebar -->
+    <div class="gmail-sidebar">
+        <p><strong>Inbox</strong></p>
+        <p>Starred</p>
+        <p>Sent</p>
+        <p>Drafts</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="gmail-main">
+
+        <div id="emailView">
+
+            <div class="email-card">
+                <div class="email-header">
+                    <p><strong>From:</strong> <span id="emailFrom"></span></p>
+                    <p><strong>Subject:</strong> <span id="emailSubject"></span></p>
+                </div>
+
+                <div class="email-body">
+                    <p id="emailMessage"></p>
+                    <a href="#" class="email-link" id="emailLink"></a>
+                </div>
+            </div>
+
+            <div class="decision-buttons">
+                <button id="clickBtn">This is Phishing</button>
+                <button id="ignoreBtn">This is Safe</button>
+            </div>
+
+            <div id="feedbackBox" class="feedback-box"></div>
+
+        </div>
+
+        <!-- Inbox Results View -->
+        <div id="inboxView" style="display:none;">
+            <h3>Inbox Overview</h3>
+            <div id="inboxList"></div>
+            <div id="finalScore"></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="simulation.js"></script>
+</body>
+</html>

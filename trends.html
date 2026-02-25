@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Phishing Trends | Click or Trick</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="trends-page">
+
+<header class="trends-header">
+    <h1>AI Threat Intelligence Dashboard</h1>
+    <a href="index.html">← Back</a>
+</header>
+
+<!-- Stats -->
+<section class="stats-hero">
+    <div class="stat-card">
+        <h2 id="emailsCount">0</h2>
+        <p>Daily Phishing Emails</p>
+    </div>
+
+    <div class="stat-card">
+        <h2 id="aiPercent">0%</h2>
+        <p>AI-Generated Attacks</p>
+    </div>
+
+    <div class="stat-card">
+        <h2 id="cloudTargets">0</h2>
+        <p>Cloud Credential Targets</p>
+    </div>
+</section>
+
+<!-- Chart Section -->
+<section class="chart-section">
+    <div class="chart-card">
+        <h3>Attack Channel Distribution</h3>
+        <canvas id="pieChart"></canvas>
+    </div>
+</section>
+
+<!-- Live Feed -->
+<section class="live-feed">
+    <h3>Live Threat Feed</h3>
+    <div id="feedContainer"></div>
+</section>
+
+<button id="exportBtn" class="export-btn">Export Chart as PNG</button>
+
+<script src="trends.js"></script>
+</body>
+</html>

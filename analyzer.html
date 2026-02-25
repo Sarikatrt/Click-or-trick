@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Threat Analyzer | Click or Trick</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="analyzer-dark">
+
+<div class="analyzer-header">
+    <h1>AI Email Threat Analyzer</h1>
+    <a href="index.html">← Back</a>
+</div>
+
+<section class="analyzer-dashboard">
+
+    <div class="input-panel">
+        <textarea id="emailInput" placeholder="Paste suspicious email content here..."></textarea>
+        <input type="text" id="linkInput" placeholder="Paste suspicious link (optional)">
+        <button id="analyzeBtn">Run AI Analysis</button>
+    </div>
+
+    <div class="result-panel">
+
+        <div id="loadingAnimation" class="hidden">
+            <div class="spinner"></div>
+            <p>Analyzing Threat Patterns...</p>
+        </div>
+
+        <div id="analysisOutput" class="hidden">
+
+            <div class="risk-meter">
+                <div class="risk-bar">
+                    <div id="riskFill"></div>
+                </div>
+                <span id="riskLabel"></span>
+            </div>
+
+            <div id="redFlags"></div>
+
+            <div class="highlighted-email">
+                <h3>Email Content Analysis</h3>
+                <p id="highlightedText"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="analyzer.js"></script>
+</body>
+</html>

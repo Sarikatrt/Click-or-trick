@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phishing Story Scenarios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="story-page">
+
+<header class="story-header">
+    <h1>Choose Your Scenario</h1>
+    <a href="index.html">← Back</a>
+</header>
+
+<!-- Scenario Cards -->
+<section class="card-container">
+
+    <div class="story-card" data-story="office">
+        <h2>The Office Hassle</h2>
+    </div>
+
+    <div class="story-card" data-story="student">
+        <h2>Phantom Scholarship Protocol</h2>
+    </div>
+
+    <div class="story-card" data-story="vishing">
+        <h2>The Whispering Caller</h2>
+    </div>
+
+</section> <!-- THIS WAS MISSING -->
+
+<!-- Story Viewer Overlay -->
+<section id="storyViewer" class="story-viewer hidden">
+
+    <div id="countdownTimer" class="countdown hidden">01:00</div>
+
+    <img id="storyImage" src="" alt="Story Scene">
+
+    <div class="story-overlay">
+        <p id="storyText"></p>
+        <button id="nextScene">Next</button>
+    </div>
+
+</section>
+
+<script src="age.js"></script>
+
+</body>
+</html>

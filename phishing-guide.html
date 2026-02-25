@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Understanding Phishing | Click or Trick</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="guide-page">
+
+<header class="guide-header">
+    <h1>Understanding Phishing</h1>
+    <a href="agebased.html">← Back to Scenarios</a>
+</header>
+
+<section class="guide-section">
+    <h2>What is Phishing?</h2>
+    <p>
+        Phishing is a social engineering attack where attackers impersonate trusted
+        sources to steal sensitive information such as passwords, financial data,
+        or confidential company information.
+    </p>
+</section>
+
+<section class="guide-section">
+    <h2>Types of Phishing</h2>
+
+    <div class="type-card">
+        <h3>Email Phishing</h3>
+        <p>Fraudulent emails pretending to be legitimate organizations.</p>
+    </div>
+
+    <div class="type-card">
+        <h3>Spear Phishing</h3>
+        <p>Targeted phishing attacks directed at specific individuals.</p>
+    </div>
+
+    <div class="type-card">
+        <h3>Smishing</h3>
+        <p>Phishing conducted through SMS messages.</p>
+    </div>
+
+    <div class="type-card">
+        <h3>Vishing</h3>
+        <p>Voice phishing via phone calls pretending to be banks or authorities.</p>
+    </div>
+</section>
+
+<section class="guide-section">
+    <h2>Common Red Flags</h2>
+    <ul>
+        <li>Urgent deadlines</li>
+        <li>Suspicious sender email</li>
+        <li>Requests for personal or company data</li>
+        <li>Spelling or domain errors</li>
+        <li>Unusual payment or credential requests</li>
+    </ul>
+</section>
+
+<section class="guide-section">
+    <h2>How to Protect Yourself</h2>
+    <ul>
+        <li>Verify sender identity</li>
+        <li>Never share credentials via email</li>
+        <li>Use multi-factor authentication</li>
+        <li>Report suspicious messages</li>
+    </ul>
+</section>
+
+<section class="guide-section highlight">
+    <h2>Explore Current Phishing Trends</h2>
+    <p>See real-time phishing threat data and analytics.</p>
+    <a href="index.html#trends" class="primary-btn">View Trends Dashboard</a>
+</section>
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+    reveals.forEach(el => {
+        const windowHeight = window.innerHeight;
+        const revealTop = el.getBoundingClientRect().top;
+        const revealPoint = 120;
+
+        if (revealTop < windowHeight - revealPoint) {
+            el.classList.add("active");
+        }
+    });
+});
+</script>
+<section class="guide-section reveal">
+
+    <h2>Phishing Impact Statistics</h2>
+
+    <div class="stats-grid">
+
+        <div class="circle-card">
+            <div class="circle">
+                <span>91%</span>
+            </div>
+            <p>Cyber attacks begin with phishing</p>
+        </div>
+
+        <div class="circle-card">
+            <div class="circle blue">
+                <span>76%</span>
+            </div>
+            <p>Organizations experienced phishing in last year</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="guide-section reveal">
+
+    <h2>Most Common Phishing Types</h2>
+
+    <div class="bar">
+        <label>Email Phishing</label>
+        <div class="bar-fill" style="width: 85%"></div>
+    </div>
+
+    <div class="bar">
+        <label>Spear Phishing</label>
+        <div class="bar-fill blue" style="width: 65%"></div>
+    </div>
+
+    <div class="bar">
+        <label>Smishing</label>
+        <div class="bar-fill purple" style="width: 55%"></div>
+    </div>
+
+</section>
+
+</body>
+</html>
